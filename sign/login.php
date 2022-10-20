@@ -1,3 +1,27 @@
+<?php
+
+include "../config/config.php";
+error_reporting(0);
+session_start();
+
+if(isset($_SESSION["username"])){
+	header("Location: index.php");
+}
+
+if(isset($_POST["submit"])){
+	$nombre=$_POST["nombre"];
+	$correo=$_POST["correo"];
+	$contrasena=md5($_POST["contraseña"]);
+	$rcontrasena=md5($_POST["rcontraseña"]);
+
+	if($contrasena){
+
+	}
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +36,7 @@
 <nav>
         <div class="desktop">
             <div class="logo">
-                <a href="index.html"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
+                <a href="index.html"><img class="imglogo" src="../img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="../index.php">Inicio</a>
                 <a href="#
@@ -28,70 +52,68 @@
                 </a>
                 
                 <a href="sign/login.php">Iniciar Sesion</a>
-                <a href="#">
+                <a href="#" class="registro">
                     Regístrate
                 </a>
             </div>
         </div>
     </nav>
-    <section>
-    <h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</div>
+	<section class="forms-section">
+  <h1 class="section-title">Bienvenido!</h1>
+  <div class="forms">
+    <div class="form-wrapper is-active">
+      <button type="button" class="switcher switcher-login">
+	  Inicia Sesión
+        <span class="underline"></span>
+      </button>
+      <form class="form form-login">
+        <fieldset>
+          
+          <div class="input-block">
+            <label for="login-email">Correo</label>
+            <input id="login-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="login-password">Contraseña</label>
+            <input id="login-password" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-login">Iniciar Sesión</button>
+      </form>
+    </div>
+    <div class="form-wrapper">
+      <button type="button" class="switcher switcher-signup">
+        Registro
+        <span class="underline"></span>
+      </button>
+      <form class="form form-signup">
+        <fieldset>
+          
+          <div class="input-block">
+            <label for="signup-email">Nombre</label>
+            <input id="signup-name" type="text" required>
+          </div>
+		 
+		  <div class="input-block">
+            <label for="signup-email">Correo</label>
+            <input id="signup-email" type="email" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password">Contraseña</label>
+            <input id="signup-password" type="password" required>
+          </div>
+          <div class="input-block">
+            <label for="signup-password-confirm">Confirmar contraseña</label>
+            <input id="signup-password-confirm" type="password" required>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn-signup">Continue</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-<footer>
-	<p>
-		Created with <i class="fa fa-heart"></i> by
-		<a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-		- Read how I created this and how you can join the challenge
-		<a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
-	</p>
-</footer>
-    </section>
-    
+<script src="../js/script.js"></script>
+
 </body>
 </html>
