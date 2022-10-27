@@ -17,7 +17,7 @@
                 </a>
                 
                 <a href="sign/login.php">Iniciar Sesion</a>
-                <a href="#" class="registro">
+                <a href="sign/register.php" class="registro">
                     Regístrate
                 </a>
             </div>
