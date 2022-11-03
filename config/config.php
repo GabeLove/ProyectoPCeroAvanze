@@ -10,4 +10,6 @@ try{
 }catch(PDOException $e){
     die('Connected failed: ' . $e->getMessage());
 }
+
+
 ?>
