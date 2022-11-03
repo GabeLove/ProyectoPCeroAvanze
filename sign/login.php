@@ -11,11 +11,31 @@
     <title>Login</title>
 </head>
 <body>
-<?php
-  
-  include "../header.php"
-  
-  ?>
+<nav>
+        <div class="desktop">
+            <div class="logo">
+                <a href="index.php"><img class="imglogo" src="../img/PCeroLogo.png" alt=""></a></div>
+            <div class="primary">
+                <a href="../index.php">Inicio</a>
+                <a href="#
+                ">Componentes</a>
+                <a href="#">Videos</a>
+            </div>
+            <div class="secondary">
+                
+                <a href="#">
+                     <span class="material-symbols-outlined">
+                    shopping_cart</span>
+                   
+                </a>
+                
+                <a href="login.php">Iniciar Sesion</a>
+                <a href="register.php" class="registro">
+                    Regístrate
+                </a>
+            </div>
+        </div>
+    </nav>
 <div class="inicio">
   <h1 class="welcome">Bienvenido, Inicia Sesion!</h1>
 

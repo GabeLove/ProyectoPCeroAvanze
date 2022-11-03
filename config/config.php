@@ -5,13 +5,9 @@ $user="root";
 $pass="";
 $database="registro";
 
-$conn = mysqli_connect($server,$user,$pass,$database);
-
-if(!$conn){
-    die("Conexión fallida");
-}else{
-    
+try{
+  $conn = new PDO("mysql:host=$server;dbname=$database;",$user,$pass);  
+}catch(PDOException $e){
+    die('Connected failed: ' . $e->getMessage());
 }
-
-
 ?>
