@@ -1,3 +1,34 @@
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['user_id'])){
+        header('Location: /ProyectoPCeroAvanze/index.php');
+    }
+
+    require '../config/config.php';
+
+    if(!empty($_POST['email']) && !empty($_POST['password'])){
+        $records = $conn->prepare('SELECT id, email,password FROM usuarios where email = :email');
+        $records->bindParam(':email',$_POST['email']);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+        
+        $message ='';
+
+        if(count($results) > 0  && password_verify($_POST['password'],$results['password'])){
+            $_SESSION['user_id'] = $results['id'];
+            header("Location: /ProyectoPCeroAvanze/index.php");
+        }else{
+            $message = 'Lo sentimos, los datos no son correctos';
+        }
+    
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,14 +68,18 @@
         </div>
     </nav>
 <div class="inicio">
+
+    <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
   <h1 class="welcome">Bienvenido, Inicia Sesion!</h1>
 
 	<form action="login.php" method="post" class="formulario">
     <input type="text" name="email" placeholder="Introduce tu correo">
 
-    <input type="text" name="password" placeholder="Introduce tu contrasena">
+    <input type="password" name="password" placeholder="Introduce tu contrasena">
 
-    <input type="submit" value="Registrarse">
+    <input type="submit" value="Iniciar Sesión">
 
 
   </form>

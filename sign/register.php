@@ -14,9 +14,9 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'
     $stmt->bindParam(':password',$password);
 
     if($stmt->execute()){
-        $message = 'Successfully created new user';
+        $message = 'Usuario creado correctamente!';
     }else{
-        $message = 'Sorry there must have been an issue creating your account ';
+        $message = 'Lo sentimos, hubo un problema al crear su cuenta';
     }
 
 }
@@ -63,7 +63,7 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'
     <div class="inicio">
 
     <?php if(!empty($message)):?>
-    <p> <?= $message ?></p>
+    <p class="usercreado"> <?= $message ?></p>
     <?php endif; ?>
   <h1 class="welcome">Bienvenido, Registrate!</h1>
 
