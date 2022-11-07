@@ -6,10 +6,11 @@ body{
     padding: 0;
     background-color: #3b4465;
     width: 100%;
-    height: 100%;
+   
     font-family: 'Open Sans', sans-serif;   
 }
 body section{
+    background-color: #3b4465;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.3em;
     line-height: 1.6;
@@ -17,6 +18,7 @@ body section{
 }
 
 nav .desktop{
+ 
     display: flex;
     text-decoration: none;
     justify-content: space-between;
@@ -65,6 +67,12 @@ nav .secondary{
     padding-right: 20px;
     
     
+    
+}
+
+nav .secondary .cerrarsesion{
+    margin-bottom: 13px;
+    padding:0 0 0 10px;
 }
 
 nav .secondary .registro{
@@ -73,18 +81,19 @@ nav .secondary .registro{
 }
 
 .title{
+  
     text-align: center;
     font-size: 40px;
     color: white;
-    margin-top: 100px;
+    
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
 
 .container{
+  
     width: 100%;
     max-width: 1200px;
-    height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -93,6 +102,7 @@ nav .secondary .registro{
 }
 
 .container .card{
+  
     width: 330px;
     height: 500px;
     border-radius: 8px;
@@ -127,6 +137,7 @@ nav .secondary .registro{
 }
 
 .container .card a {
+  
     font-weight: 500;
     text-decoration: none;
     color: plum; 
@@ -174,6 +185,7 @@ nav .desktop a .material-symbols-outlined {
 .inicio .welcome{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    
 }
 
 
@@ -194,7 +206,7 @@ input[type="submit"]{
     padding: 10px;
     color: #fff;
     background-color: #0098cb;
-    width: 320px;
+    width: 350px;
     margin-top: 40px;
     border: 0;
     border-radius: 10px;
@@ -206,11 +218,22 @@ input[type="submit"]:hover{
     background-color: #00b8eb;
 }
 
+.error{
+  background-color: #FF9185;
+  font-size: 12px;
+  padding: 10px;
+}
+.correcto{
+  background-color: #A0DEA7;
+  font-size: 12px;
+  padding: 10px;
+}
 
 /*footer*/
 
 .footer-clean {
   padding:50px 0;
+  height: 329px;
   background-color:#3b4465;
   color:white;
 }
@@ -294,3 +317,80 @@ input[type="submit"]:hover{
   font-size:13px;
   opacity:0.6;
 }   
+
+
+
+/*productos*/
+
+.articulo{
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  text-align: center;
+  width: 200px;
+  border: 5px solid black;
+  margin-left: 30px;
+}
+.articulo div{
+  padding: 5px 0;
+}
+.articulo .imagen img{
+  height: 200px;
+}
+
+.articulo .titulo{
+  font-weight: bold;
+  font-size: 18px;
+}
+button{
+  border: 0;
+  border-radius: 5px;
+  background: rgb(255, 157, 10);
+  cursor: pointer;
+  padding: 10px;
+}
+
+#carrito-container{
+  width: 400px;
+  color: #000;
+  background: white;
+  border: solid 1px #000;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  display: none;
+}
+
+#tabla .fila{
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+#tabla .fila .imagen{
+  display: inline-block;
+  width: 100px;
+}
+#tabla .fila .info{
+  box-sizing: border-box;
+  font-size: 14px;
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: top;
+  width: 273px;
+}
+
+#tabla .fila .info .nombre{
+  font-size: 20px;
+  font-weight: bold;
+}
+#tabla .fila .info .botones{
+  padding: 20px 0 0 0;
+}
+
+#tabla p{
+  font-size: 24px !important;
+  text-align: center;
+  font-weight: bold;
+}

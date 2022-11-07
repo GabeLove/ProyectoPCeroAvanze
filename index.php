@@ -52,7 +52,7 @@
                 </a>
                 
                 <p>Bienvenido. <?= $user['name']; ?></p>
-                <a href="sign/salir.php">Cerrar sesión</a>
+                <a href="sign/salir.php" class="cerrarsesion">Cerrar sesión</a>
                 
             </div>
         </div>
@@ -66,7 +66,7 @@
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
                 <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
-                <a href="#">Elegir</a>
+                <a href="discos.php">Elegir</a>
             </div>
 
              <div class="card">
@@ -104,10 +104,16 @@
                 <a href="#">Videos</a>
             </div>
             <div class="secondary">
+            <div class="carrito">
+                <a href="#" class='btn-carrito'><span class="material-symbols-outlined">
+                    shopping_cart</span></a>
+                <div id="carrito-container" >
+                    <div id="tabla" >
+                    </div>
+                </div>
+    </div>
                 
-                <a href="#">
-                     <span class="material-symbols-outlined">
-                    shopping_cart</span>
+                     
                    
                 </a>
                 
@@ -127,7 +133,7 @@
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
                 <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
-                <a href="#">Elegir</a>
+                <a href="discos.php">Elegir</a>
             </div>
 
              <div class="card">
@@ -152,5 +158,7 @@
     
      ?>
     <?php endif; ?>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

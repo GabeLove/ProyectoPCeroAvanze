@@ -20,7 +20,7 @@
             $_SESSION['user_id'] = $results['id'];
             header("Location: /ProyectoPCeroAvanze/index.php");
         }else{
-            $message = 'Lo sentimos, los datos no son correctos';
+            $message = 'Lo sentimos, los datos no son correctos.';
         }
     
     }
@@ -70,11 +70,12 @@
 <div class="inicio">
 
     <?php if(!empty($message)): ?>
-      <p> <?= $message ?></p>
+      <p class="error"> <?= $message ?></p>
     <?php endif; ?>
   <h1 class="welcome">Bienvenido, Inicia Sesion!</h1>
 
 	<form action="login.php" method="post" class="formulario">
+
     <input type="text" name="email" placeholder="Introduce tu correo">
 
     <input type="password" name="password" placeholder="Introduce tu contrasena">
