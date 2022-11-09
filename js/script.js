@@ -51,7 +51,6 @@ function actualizarCarritoUI(){
                     <input type='hidden' value='${element.id}'/>
                     <div class='nombre'>${element.nombre}</div>
                     <div>Tipo${element.tipo}</div>
-					<div>${element.cantidad} discos</div>
 					<div class='capacidad'>${element.capacidad}</div>
                     <div>Subtotal: ${element.subtotal}</div>
                     <div class-'botones'><button class='btn-remove'>Quitar 1 del carrito</button></div>
@@ -60,7 +59,7 @@ function actualizarCarritoUI(){
             `;
         });
 
-        precioTotal = `<p>Productos: ${response.info.count}</p>`;
+        precioTotal = `<p>Total: ${response.info.count} productos</p>`;
         tablaCont.innerHTML= precioTotal + html;
 
         document.cookie = `items=${response.info.count}`; 

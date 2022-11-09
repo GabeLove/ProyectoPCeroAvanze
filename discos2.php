@@ -23,12 +23,13 @@
             </div>
             <div class="secondary">
             <div class="carrito">
-                <a href="#" class='btn-carrito'>Carrito</a>
+                <a href="#" class='btn-carrito'><span class="material-symbols-outlined">
+                    shopping_cart</span></a>
                 <div id="carrito-container" >
                     <div id="tabla" >
                     </div>
                 </div>
-             </div>
+    </div>
                 
                      
                    
@@ -43,12 +44,22 @@
     </nav>
     
     <main>
-        
+        <div class="componentes">
+            <ul>
+                <li><a href="#">Procesador</a></li>
+                <li><a href="#">Memoria RAM</a></li>
+                <li><a href="#">Almacenamiento</a></li>
+                <li><a href="#">Tarjema Madre</a></li>
+                <li><a href="#">Tarjeta de video</a></li>
+                <li><a href="#">Fuente de poder</a></li>
+
+            </ul>
+        </div>
     <div class="texto1">
         <h1>Discos duros o de estados solido</h1>
     </div>
        <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=1'),true);
+       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=2'),true);
         if($response['statuscode']==200){
             foreach($response['items'] as $item){
                 include('layout/items.php');

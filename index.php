@@ -45,11 +45,14 @@
             </div>
             <div class="secondary">
                 
-                <a href="#">
-                     <span class="material-symbols-outlined">
-                    shopping_cart</span>
-                   
-                </a>
+            <div class="carrito">
+                <a href="#" class='btn-carrito'><span class="material-symbols-outlined">
+                    shopping_cart</span></a>
+                <div id="carrito-container" >
+                    <div id="tabla" >
+                    </div>
+                </div>
+              </div>
                 
                 <p>Bienvenido. <?= $user['name']; ?></p>
                 <a href="sign/salir.php" class="cerrarsesion">Cerrar sesión</a>
@@ -73,14 +76,14 @@
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="#">Elegir</a>
+                <a href="discos2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="#">Elegir</a>
+                <a href="discos3.php">Elegir</a>
             </div>
         </div>
         
@@ -111,7 +114,7 @@
                     <div id="tabla" >
                     </div>
                 </div>
-    </div>
+              </div>
                 
                      
                    
@@ -140,14 +143,14 @@
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="#">Elegir</a>
+                <a href="discos2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="#">Elegir</a>
+                <a href="discos3.php">Elegir</a>
             </div>
         </div>
         

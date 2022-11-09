@@ -321,6 +321,45 @@ input[type="submit"]:hover{
 
 
 /*productos*/
+main{
+
+background-color: #ffffff;
+text-align: center;
+height: 700px;
+}
+
+main .componentes{
+  
+  width: 250px;
+  height: 200x;
+  background-color: #78CAD2;
+  z-index: 0;
+  margin-left: 40px;
+  border-radius: 10px;
+  top: 60px;
+  left: 30px;
+  box-shadow:
+  29px 28.1px 9.7px rgba(0, 0, 0, 0.06),
+  60px 58px 31px rgba(0, 0, 0, 0.026)
+;
+}
+main .componentes ul{
+  padding: 0;
+
+}
+main .componentes ul li{
+  list-style: none;
+
+  
+}
+
+main .componentes ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px; 
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
 
 .articulo{
   display: inline-block;
@@ -328,14 +367,18 @@ input[type="submit"]:hover{
   vertical-align: top;
   text-align: center;
   width: 200px;
-  border: 5px solid black;
-  margin-left: 30px;
+  
+  margin:  10px 30px;
+  
+  
 }
 .articulo div{
   padding: 5px 0;
+  
 }
 .articulo .imagen img{
-  height: 200px;
+  width: 160px;
+
 }
 
 .articulo .titulo{
@@ -351,15 +394,17 @@ button{
 }
 
 #carrito-container{
-  width: 400px;
+  width: 380px;
   color: #000;
   background: white;
   border: solid 1px #000;
+  border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
   position: absolute;
-  right: 0;
+  right: 10px;
   margin-top: 10px;
+ 
   display: none;
 }
 
