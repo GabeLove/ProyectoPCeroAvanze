@@ -1,3 +1,23 @@
+<?php
+    session_start();
+
+    require 'config/config.php';
+    $user = null;
+    if(isset($_SESSION['user_id'])){
+        $records = $conn->prepare('SELECT id, name, email,password FROM usuarios WHERE id=:id');
+        $records->bindParam(':id', $_SESSION['user_id']);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+
+        
+
+        if(count($results) >0 ){
+            $user =$results;
+        }
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +31,8 @@
     <title>PCero</title>
 </head>
 <body>
+    <!--Aqui se muestra la pagina si el usuario si ha iniciado sesion-->
+<?php if(!empty($user)): ?>
     <nav>
         <div class="desktop">
             <div class="logo">
@@ -28,11 +50,61 @@
                     <div id="tabla" >
                     </div>
                 </div>
-             </div>
+             </div>   
+             <p>Bienvenido. <?= $user['name']; ?></p>
+                <a href="sign/salir.php" class="cerrarsesion">Cerrar sesión</a>
+             
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        
+    <div class="texto1">
+        <h1>Procesadores</h1>
+    </div>
+       <?php
+       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=1'),true);
+        if($response['statuscode']==200){
+            foreach($response['items'] as $item){
+                include('layout/items.php');
+            }
+
+        }else{
+            echo $response['response'];
+        }
+       ?>
+    </main>
+
+ 
+
+   
+
+     <!--Aqui se muestra la pagina si el usuario no ha iniciado sesion-->
+    <?php else: ?>
+        <nav>
+        <div class="desktop">
+            <div class="logo">
+                <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
+            <div class="primary">
+                <a href="index.php">Inicio</a>
+                <a href="#
+                ">Componentes</a>
+                <a href="#">Videos</a>
+            </div>
+            <div class="secondary">
+            <div class="carrito">
+                <a href="#" class='btn-carrito'><span class="material-symbols-outlined">
+                    shopping_cart</span></a>
+                <div id="carrito-container" >
+                    <div id="tabla" >
+                    </div>
+                </div>
+              </div>
                 
                      
                    
-                </a>
+                
                 
                 <a href="sign/login.php">Iniciar Sesion</a>
                 <a href="sign/register.php" class="registro">
@@ -41,7 +113,7 @@
             </div>
         </div>
     </nav>
-    
+
     <main>
         
     <div class="texto1">
@@ -60,11 +132,11 @@
        ?>
     </main>
 
-    <script src="js/script.js"></script>
-
-   <?php
+    <?php endif; ?>
+    <?php
          include "footer.php"
     
      ?>
+    <script src="js/script.js"></script>
 </body>
 </html>

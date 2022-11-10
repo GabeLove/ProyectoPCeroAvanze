@@ -75,7 +75,7 @@
              <div class="card">
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
-                <p>.</p>
+                <p>Esta computadora es ideal para estudiantes de nivel superior o profresionales.</p>
                 <a href="procesadores2.php">Elegir</a>
             </div>
 
@@ -118,7 +118,7 @@
                 
                      
                    
-                </a>
+                
                 
                 <a href="sign/login.php">Iniciar Sesion</a>
                 <a href="sign/register.php" class="registro">
