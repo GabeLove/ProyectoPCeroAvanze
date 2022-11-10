@@ -45,10 +45,10 @@
     <main>
         
     <div class="texto1">
-        <h1>Discos duros o de estados solido</h1>
+        <h1>Procesadores</h1>
     </div>
        <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador?nivel=1'),true);
+       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=1'),true);
         if($response['statuscode']==200){
             foreach($response['items'] as $item){
                 include('layout/items.php');

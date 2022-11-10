@@ -69,21 +69,21 @@
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
                 <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
-                <a href="discos.php">Elegir</a>
+                <a href="procesadores1.php">Elegir</a>
             </div>
 
              <div class="card">
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="discos2.php">Elegir</a>
+                <p>.</p>
+                <a href="procesadores2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="discos3.php">Elegir</a>
+                <a href="procesadores3.php">Elegir</a>
             </div>
         </div>
         
@@ -136,21 +136,21 @@
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
                 <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
-                <a href="discos.php">Elegir</a>
+                <a href="procesadores1.php">Elegir</a>
             </div>
 
              <div class="card">
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="discos2.php">Elegir</a>
+                <a href="procesadores2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="discos3.php">Elegir</a>
+                <a href="procesadores3.php">Elegir</a>
             </div>
         </div>
         

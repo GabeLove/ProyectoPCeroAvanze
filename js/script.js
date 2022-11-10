@@ -46,12 +46,12 @@ function actualizarCarritoUI(){
             html +=`
             <div class='fila'>
                 <div class='imagen'></div>
-                    <img src='img/discos/${element.imagen}' width='100'/>
+                    <img src='img/imgcpus/${element.imagen}' width='100'/>
                 <div class='info'>
                     <input type='hidden' value='${element.id}'/>
                     <div class='nombre'>${element.nombre}</div>
-                    <div>Tipo${element.tipo}</div>
-					<div class='capacidad'>${element.capacidad}</div>
+                    <div>Caracteristicas${element.caracteristicas}</div>
+					<div class='link'><a href="${element.link}" target="_blank">Link de compra</a></div>
                     <div>Subtotal: ${element.subtotal}</div>
                     <div class-'botones'><button class='btn-remove'>Quitar 1 del carrito</button></div>
                 </div>
