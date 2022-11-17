@@ -46,7 +46,7 @@ function actualizarCarritoUI(){
             html +=`
             <div class='fila'>
                 <div class='imagen'></div>
-                    <img src='img/imgcpus/${element.imagen}' width='100'/>
+                    <img src='img/${element.imagen}' width='100'/>
                 <div class='info'>
                     <input type='hidden' value='${element.id}'/>
                     <div class='nombre'>${element.nombre}</div>

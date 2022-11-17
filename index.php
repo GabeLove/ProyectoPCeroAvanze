@@ -54,7 +54,7 @@
                 </div>
               </div>
                 
-                <p>Bienvenido. <?= $user['name']; ?></p>
+                <p class="registro">Bienvenido. <?= $user['name']; ?></p>
                 <a href="sign/salir.php" class="cerrarsesion">Cerrar sesión</a>
                 
             </div>
