@@ -39,8 +39,9 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="componentes.php">Componentes</a>
-                <a href="videos.php">Videos</a>
+                <a href="#
+                ">Componentes</a>
+                <a href="#">Videos</a>
             </div>
             <div class="secondary">
                 
@@ -63,23 +64,22 @@
             <img  class="imgbanner"  src="img/banner/work.jpg" alt="">
             <h1 class="h1banner">BIENVENIDO A</h1>           
             <h2 class="h2banner">PCERO</h2>
-            <h3 class="h3banner">Esta página fue creada para todo aquel que quiera elegir los componentes adecuados para una computadora de escritorio.</h3>
+            <h3 class="h3banner">Esta pagina fue creada para todo aquel que quiera elegir los componentes adecuados para una computadora de escritorio</h3>
             <a href="#seccion1">Explora la opciones</a>
-            <a href="#seccion2" class="seccion2">¿Quiénes somos?</a>
     </div>
 
     <section id="seccion1">
 
         
         
-        <h1 class="title">Elige la opción más adecuada para ti</h1>
+        <h1 class="title">Elige la opcion mas adecuada para ti</h1>
         <p class="texto2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga officia distinctio officiis veritatis delectus ipsam iure obcaecati nulla itaque velit? Iure maxime laudantium dolore consequatur perspiciatis dolorem voluptate repellat nisi?</p>
         <div class="container">
 
             <div class="card">
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
-                <p>La computadora ideal para estudiantes de nivel básico y medio superior.</p>
+                <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
                 <a href="procesadores1.php">Elegir</a>
             </div>
 
@@ -100,12 +100,6 @@
         
          
          </section>
-
-         <div class="about">
-            <img src="img/banner/office1.jpg" alt="">
-            <h1 class="quienessomos">¿Quiénes somos?</h1>
-
-         </div>
    <?php
          include "footer.php"
     
@@ -119,8 +113,9 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="componentes.php">Componentes</a>
-                <a href="videossinlogin.php">Videos</a>
+                <a href="#
+                ">Componentes</a>
+                <a href="#">Videos</a>
             </div>
             <div class="secondary">
             <div class="carrito">
@@ -143,49 +138,12 @@
             </div>
         </div>
     </nav> 
-         <div class="banner1">
-            <img  class="imgbanner"  src="img/banner/work.jpg" alt="">
-            <h1 class="h1banner">BIENVENIDO A</h1>           
-            <h2 class="h2banner">PCERO</h2>
-            <h3 class="h3banner">Esta pagina fue creada para todo aquel que quiera elegir los componentes adecuados para una computadora de escritorio</h3>
-            <a href="#seccion1">Explora la opciones</a>
-            <a href="#seccion2" class="seccion2">¿Quiénes somos?</a>
+         <div class="avisologin1">
+            <img  class="imgbanner"  src="img/banner/secretary.jpg" alt="">
+            <h1 class="avisologin">Los videos solo estan disponibles para los usuarios registrados :(</h1>           
+            <a href="sign/login.php" >Iniciar Sesión</a>
         </div>
-    <section id="seccion1">
-  
-        <h1 class="title">Elige la opcion mas adecuada para ti</h1>
-        <p class="texto2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga officia distinctio officiis veritatis delectus ipsam iure obcaecati nulla itaque velit? Iure maxime laudantium dolore consequatur perspiciatis dolorem voluptate repellat nisi?</p>
-        <div class="container">
 
-            <div class="card">
-                <img src="img/estudiante1.jpg" alt="">
-                <h4>Estudiante básico</h4>
-                <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
-                <a href="procesadores1.php">Elegir</a>
-            </div>
-
-             <div class="card">
-                <img src="img/estudiante2.jpg" alt="">
-                <h4>Profesional</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="procesadores2.php">Elegir</a>
-            </div>
-
-            <div class="card">
-                <img src="img/gamer2.jpg" alt="">
-                <h4>Gamer</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a href="procesadores3.php">Elegir</a>
-            </div>
-        </div>
-        
-         
-         </section>
-         <div  id="seccion2" class="about">
-            <img src="img/banner/office1.jpg" alt="">
-            <h1 class="quienessomos">¿Quiénes somos?</h1>
-            <p class="nosotrossomos">Somos una página que surgió de un problema porque el cual pasamos muchos de nosotros, el cuál es si queremos ensamblar una computadora por nuestra cuenta y no sabemos si los componentes son los correctos para el uso que le daremos, esta página te ayudara a mostrarte los componentes correctos dependiendo para que quieras usar la computadora. </p>
-         </div>
    <?php
          include "footer.php"
     

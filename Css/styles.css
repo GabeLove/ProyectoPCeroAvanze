@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
 
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     background-color: #3b4465;
     width: 100%;
-   
+    
     font-family: 'Open Sans', sans-serif;   
 }
 body section{
-    background-color: #3b4465;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.3em;
     line-height: 1.6;
+    
+    padding-bottom: 40px;
     
 }
 
@@ -84,11 +88,18 @@ nav .secondary .registro{
 .title{
   
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     color: white;
+    padding-top: 50px;
+    font-weight: bold;
     
-    font-weight: 100;
     font-family: 'Roboto', sans-serif;
+}
+.texto2{
+  color: white;
+  padding:60px 100px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .container{
@@ -157,6 +168,247 @@ nav .desktop a .material-symbols-outlined {
   'opsz' 48
 }
 
+
+/*Listar componentes*/
+
+.listarcomponentes{
+  background-color: #fff;
+  text-align: center;
+}
+.listarcomponentes h1{
+  padding: 30px 0;
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.listarcomponentes ul
+{
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.listarcomponentes  #boton1{
+  border: 0;
+  border-radius: 5px;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.listarcomponentes li
+{
+
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+list-style: none;
+background-color: #000000;
+}
+
+.listarcomponentes li a
+{
+text-decoration: none;
+color: black;
+padding: 7px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#idcpu1{
+  display: block;
+  width: 80%;
+}
+#idmadre1{
+  display: none;
+  width: 80%;
+}
+#idfuente1{
+  display: none;
+  width: 80%;
+}
+
+#iddisco1{
+  display: none;
+  width: 80%;
+}
+#idram1{
+  display: none;
+  width: 80%;
+}
+#idvideo1{
+  display: none;
+  width: 80%;
+}
+
+/*abouut*/
+
+.about{
+  position: relative;
+}
+.about .quienessomos{
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  top: 50px;
+  padding: 20px;
+  left: 40%;
+  border: 3px solid black;
+  box-shadow: 	0px 3px 6px 3px rgba(0,0,0,0.12),
+		0px 6px 10px 3px rgba(0,0,0,0.22),
+		0px 9px 14px 3px rgba(0,0,0,0.2),
+		0px 18px 16px 6px rgba(0,0,0,0.28);
+  border-radius:	6px;  
+}
+.about .nosotrossomos{
+  position: absolute;
+  top: 200px;
+  width: 900px;
+  font-size: 24px;
+  left: 30%;
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  border: 3px solid black;
+  box-shadow: 	0px 3px 6px 3px rgba(0,0,0,0.12),
+		0px 6px 10px 3px rgba(0,0,0,0.22),
+		0px 9px 14px 3px rgba(0,0,0,0.2),
+		0px 18px 16px 6px rgba(0,0,0,0.28);
+  border-radius:	6px;  
+
+}
+
+/*Videos sin login*/
+.avisologin1 .avisologin{
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 160px;
+  margin-left: -5px;
+  background-color: rgba(102, 178, 255, 0.4);
+  top: 370px;
+  left: 50px;
+  font-family: 'poppins',sans-serif;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 5px;
+}
+
+.avisologin1 a{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  width: 370px;
+  padding: 10px 20 px;
+  text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 30px;
+  top: 600px;
+  left: 800px;
+  text-justify: distribute-all-lines;
+  font-family: 'poppins',sans-serif;
+}
+
+/*Banner*/
+
+.imgbanner{
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  border-bottom: 2px solid #fff;
+}
+ .h1banner{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  line-height: 160px;
+  margin-left: -5px;
+  bottom: 370px;
+  left: 50px;
+  font-family: 'poppins',sans-serif;
+ 
+ }
+.h2banner{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 190px;
+  line-height: 160px;
+  margin-left: -10px;
+  bottom: 250px;
+  left: 50px;
+  font-family: 'poppins',sans-serif;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url("../img/banner/back.png");
+  -webkit-background-clip: text ;
+  background-position: 0 0;
+  animation: back 20s linear infinite ;
+ 
+}
+
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+.h3banner{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 50%;
+  font-size: 40px;
+  font-weight: 500;
+  bottom: 110px;
+  left: 50px;
+  text-justify: distribute-all-lines;
+  font-family: 'poppins',sans-serif;
+ 
+}
+.banner1 a{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 370px;
+  padding: 10px 20 px;
+  text-align: center;
+  border: 2px solid #fff;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 30px;
+  bottom: 40px;
+  left: 50px;
+  text-justify: distribute-all-lines;
+  font-family: 'poppins',sans-serif;
+ 
+}
+.banner1 .seccion2{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 370px;
+  padding: 10px 20 px;
+  text-align: center;
+  border: 2px solid #fff;
+  text-decoration: none;
+  border-radius: 5px;
+ 
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 30px;
+  bottom: 40px;
+  left: 500px;
+  text-justify: distribute-all-lines;
+  font-family: 'poppins',sans-serif;
+}
 
 /*Login*/
 
@@ -230,13 +482,55 @@ input[type="submit"]:hover{
   padding: 10px;
 }
 
+/*video tutoriales*/
+
+.menuvideos{
+  display: block;
+  background-color: #edf2f4;
+  
+  text-align: center;
+}
+
+.menuvideos h1{
+  font-size: 50px;
+  padding-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.menuvideos h2{
+  font-size: 40px;
+  padding-top: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+.menuvideos p{
+  padding-top: 10px;
+  
+  width: 600px;
+  margin: 10px auto;
+  font-family:Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.menuvideos img{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border: 4px solid black;
+}
+.menuvideos iframe{
+  border: 4px solid black;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
 /*footer*/
 
 .footer-clean {
+
   padding:50px 0;
-  height: 329px;
+  height: 400px;
+  width: 100%;
   background-color:#3b4465;
   color:white;
+  
 }
 
 .footer-clean h3 {
@@ -326,7 +620,12 @@ main{
 
 background-color: #ffffff;
 text-align: center;
-height: 700px;
+margin-bottom: 100px;
+width: 85%;
+align-items: center;
+align-content: center;
+
+
 }
 
 main .componentes{
@@ -363,12 +662,14 @@ main .componentes ul li a{
   }
 
 .articulo{
+  position: relative;
   display: inline-block;
   padding: 10px;
   padding-bottom: 25px;
   vertical-align: top;
   text-align: center;
   width: 300px;
+  max-height: 700px;
   margin:  10px 30px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   
@@ -380,13 +681,19 @@ main .componentes ul li a{
 }
 .articulo .imagen img{
  
-  height: 150px;
+  max-height: 150px;
+  max-width: 250px;
 
+}
+.articulo .precio{
+  display: inline-block;
+  height: 120px;
 }
 
 .articulo .titulo{
   font-weight: bold;
   font-size: 18px;
+  height: 80px;
 }
 button{
   border: 0;
@@ -396,8 +703,10 @@ button{
   padding: 10px;
 }
 
+
 #carrito-container{
   width: 380px;
+  height: 700px;
   color: #000;
   background: white;
   border: solid 1px #000;
@@ -407,13 +716,16 @@ button{
   position: absolute;
   right: 10px;
   margin-top: 10px;
- 
+  overflow: hidden;
+  overflow-y: scroll;
   display: none;
+  z-index: 1;
 }
 
 #tabla .fila{
   box-sizing: border-box;
   padding: 10px 0;
+ 
 }
 
 #tabla .fila .imagen{
@@ -439,6 +751,7 @@ button{
   padding-left: 20px;
   vertical-align: top;
   width: 273px;
+  
 }
 
 #tabla .fila .info .nombre{
@@ -527,7 +840,10 @@ button{
   text-decoration: none;
   font-family: inherit;
   font-size: 15px;
+  
+  
  }
+
  
  button.btn-add {
   font-weight: 600;

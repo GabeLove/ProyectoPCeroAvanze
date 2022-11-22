@@ -53,7 +53,7 @@ function actualizarCarritoUI(){
                     <div>Caracteristicas:<br>${element.caracteristicas}</div>
                     <div>Cantidad: ${element.cantidad}</div>
 					<div class='link'><a href="${element.link}" target="_blank">Link de compra</a></div>
-                    <div>Subtotal: ${element.subtotal}</div>
+                 
                     <div class-'botones'><button class='btn-remove'>Quitar 1 del carrito</button></div>
                 </div>
             </div>

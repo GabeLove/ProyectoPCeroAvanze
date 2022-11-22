@@ -41,9 +41,8 @@ if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['password'
                 <a href="index.html"><img class="imglogo" src="../img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="../index.php">Inicio</a>
-                <a href="#
-                ">Componentes</a>
-                <a href="#">Videos</a>
+                <a href="../componentes.php">Componentes</a>
+                <a href="../videossinlogin.php">Videos</a>
             </div>
             <div class="secondary">
                 

@@ -39,9 +39,8 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="#
-                ">Componentes</a>
-                <a href="#">Videos</a>
+                <a href="componentes.php">Componentes</a>
+                <a href="videos.php">Videos</a>
             </div>
             <div class="secondary">
             <div class="carrito">
@@ -97,9 +96,8 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="#
-                ">Componentes</a>
-                <a href="#">Videos</a>
+                <a href="componentes.php">Componentes</a>
+                <a href="videossinlogin.php">Videos</a>
             </div>
             <div class="secondary">
             <div class="carrito">

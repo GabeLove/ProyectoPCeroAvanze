@@ -58,12 +58,13 @@
     </nav>
     
     <main>
-        
+
+
     <div class="texto1">
-        <h1>Procesadores</h1>
+        <h1>Tarjeta Madre</h1>
     </div>
        <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=1'),true);
+       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=tarjetamadre&&nivel=3'),true);
         if($response['statuscode']==200){
             foreach($response['items'] as $item){
                 include('layout/items.php');
@@ -75,7 +76,7 @@
        ?>
 
 <div class="siguiente">
-        <a href="tarjetamadre01.php">
+        <a href="ram03.php">
             <button class="cssbuttons-io-button"> Siguiente
                 <div class="icon">
                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
@@ -125,10 +126,10 @@
     <main>
         
     <div class="texto1">
-        <h1>Procesadores</h1>
+        <h1>Tarjeta Madre</h1>
     </div>
        <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=1'),true);
+       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=tarjetamadre&&nivel=3'),true);
         if($response['statuscode']==200){
             foreach($response['items'] as $item){
                 include('layout/items.php');
@@ -140,7 +141,7 @@
        ?>
 
        <div class="siguiente">
-        <a href="tarjetamadre01.php">
+        <a href="ram03.php">
             <button class="cssbuttons-io-button"> Siguiente
                 <div class="icon">
                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
