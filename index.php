@@ -79,21 +79,21 @@
             <div class="card">
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
-                <p>La computadora ideal para estudiantes de nivel básico y medio superior.</p>
+                <p>La computadora ideal para estudiantes de nivel básico y medio superior. Para hacer tareas básicas y navegar en internet</p>
                 <a href="procesadores1.php">Elegir</a>
             </div>
 
              <div class="card">
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
-                <p>Esta computadora es ideal para estudiantes de nivel superior o profresionales.</p>
+                <p>Esta computadora es ideal para estudiantes de nivel superior o profresionales. Ademas de lo basico puede ejecutar programas que requieran un poco mas de requisitos.</p>
                 <a href="procesadores2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Este tipo de computadoras son para todos aquellos que aparte de hacer tareas o trabajo, pueden jugar una gran variedad de videojuegos.</p>
                 <a href="procesadores3.php">Elegir</a>
             </div>
         </div>
@@ -161,21 +161,21 @@
             <div class="card">
                 <img src="img/estudiante1.jpg" alt="">
                 <h4>Estudiante básico</h4>
-                <p>La computadora ideal para estudiantes de nivel basico y medio superior.</p>
+                <p>La computadora ideal para estudiantes de nivel básico y medio superior. Para hacer tareas básicas y navegar en internet.</p>
                 <a href="procesadores1.php">Elegir</a>
             </div>
 
              <div class="card">
                 <img src="img/estudiante2.jpg" alt="">
                 <h4>Profesional</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Esta computadora es ideal para estudiantes de nivel superior o profresionales. Ademas de lo basico puede ejecutar programas que requieran un poco mas de requisitos.</p>
                 <a href="procesadores2.php">Elegir</a>
             </div>
 
             <div class="card">
                 <img src="img/gamer2.jpg" alt="">
                 <h4>Gamer</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <p>Este tipo de computadoras son para todos aquellos que aparte de hacer tareas o trabajo, pueden jugar una gran variedad de videojuegos.</p>
                 <a href="procesadores3.php">Elegir</a>
             </div>
         </div>
