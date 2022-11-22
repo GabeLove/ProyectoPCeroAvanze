@@ -61,6 +61,7 @@
         
     <div class="texto1">
         <h1>Procesadores</h1>
+        <p>El procesador es la parte más importante de un ordenador. Es el cerebro, coordina todos los datos, todas las aplicaciones, y todos los procesos pasan por el procesador. Los dos tipos de procesador más utilizados son Intel y AMD. Todo lo que tienes que saber sobre ellos te lo contamos en este artículo.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=1'),true);
@@ -125,6 +126,7 @@
         
     <div class="texto1">
         <h1>Procesadores</h1>
+        <p>El procesador es la parte más importante de un ordenador. Es el cerebro, coordina todos los datos, todas las aplicaciones, y todos los procesos pasan por el procesador. Los dos tipos de procesador más utilizados son Intel y AMD. Todo lo que tienes que saber sobre ellos te lo contamos en este artículo.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=procesador&&nivel=3'),true);

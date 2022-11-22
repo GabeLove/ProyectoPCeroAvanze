@@ -62,6 +62,7 @@
 
     <div class="texto1">
         <h1>Tarjeta Madre</h1>
+        <p>La tarjeta madre es la columna vertebral que une los componentes de la computadora en un mismo punto y les permite comunicarse entre sí. Sin ella, ninguna de las piezas de la computadora, como el CPU, la GPU o el disco duro, podrían interactuar. La funcionalidad total de la tarjeta madre es necesaria para que una computadora funcione bien.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=tarjetamadre&&nivel=1'),true);
@@ -127,6 +128,7 @@
         
     <div class="texto1">
         <h1>Tarjeta Madre</h1>
+        <p>La tarjeta madre es la columna vertebral que une los componentes de la computadora en un mismo punto y les permite comunicarse entre sí. Sin ella, ninguna de las piezas de la computadora, como el CPU, la GPU o el disco duro, podrían interactuar. La funcionalidad total de la tarjeta madre es necesaria para que una computadora funcione bien.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=tarjetamadre&&nivel=2'),true);

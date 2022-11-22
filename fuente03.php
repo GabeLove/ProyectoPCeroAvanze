@@ -62,6 +62,7 @@
 
     <div class="texto1">
         <h1>Fuentes de poder</h1>
+        <p>Es la encargada de alimentar de electricidad a todos los dispositivos de una computadora que estén conectados a la placa madre de esta, esto es, de darles la energía necesaria para que funcionen. Haciendo un simil con el cuerpo humano, si la placa madre es el cerebro, la fuente de alimentación sería el corazón.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=fuente&&nivel=3'),true);
@@ -127,6 +128,7 @@
         
     <div class="texto1">
         <h1>Fuentes de poder</h1>
+        <p>Es la encargada de alimentar de electricidad a todos los dispositivos de una computadora que estén conectados a la placa madre de esta, esto es, de darles la energía necesaria para que funcionen. Haciendo un simil con el cuerpo humano, si la placa madre es el cerebro, la fuente de alimentación sería el corazón.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=fuente&&nivel=3'),true);

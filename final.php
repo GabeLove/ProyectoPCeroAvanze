@@ -39,7 +39,8 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="componentes.php">Componentes</a>
+                <a href="#
+                ">Componentes</a>
                 <a href="videos.php">Videos</a>
             </div>
             <div class="secondary">
@@ -61,30 +62,11 @@
 
 
     <div class="texto1">
-        <h1>Memoria RAM</h1>
-        <p>La memoria RAM sirve para mejorar la velocidad de respuesta al momento de utilizar algún programa en el ordenador ya que la información que necesita dicho programa para hacerlo funcionar se encuentra almacenada en la memoria RAM, de esta manera, al ejecutar el programa se traslada al procesador todas las instrucciones</p>
+        <h1>Haz terminado, puedes consultar el carrito para ver los componentes que elegiste</h1>
     </div>
-       <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=ram&&nivel=3'),true);
-        if($response['statuscode']==200){
-            foreach($response['items'] as $item){
-                include('layout/items.php');
-            }
+    
 
-        }else{
-            echo $response['response'];
-        }
-       ?>
 
-<div class="siguiente">
-        <a href="discos03.php">
-            <button class="cssbuttons-io-button"> Siguiente
-                <div class="icon">
-                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-                 </div>
-            </button>
-        </a>
-       </div>
     </main>
 
  
@@ -127,30 +109,11 @@
     <main>
         
     <div class="texto1">
-        <h1>Memoria RAM</h1>
-        <p>La memoria RAM sirve para mejorar la velocidad de respuesta al momento de utilizar algún programa en el ordenador ya que la información que necesita dicho programa para hacerlo funcionar se encuentra almacenada en la memoria RAM, de esta manera, al ejecutar el programa se traslada al procesador todas las instrucciones</p>
+    <h1 class="final">Haz terminado, puedes consultar el carrito para ver los componentes que elegiste</h1>
     </div>
-       <?php
-       $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=ram&&nivel=3'),true);
-        if($response['statuscode']==200){
-            foreach($response['items'] as $item){
-                include('layout/items.php');
-            }
+       
 
-        }else{
-            echo $response['response'];
-        }
-       ?>
-
-       <div class="siguiente">
-        <a href="discos03.php">
-            <button class="cssbuttons-io-button"> Siguiente
-                <div class="icon">
-                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-                 </div>
-            </button>
-        </a>
-       </div>
+       
     </main>
 
     <?php endif; ?>

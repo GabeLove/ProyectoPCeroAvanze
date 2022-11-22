@@ -39,8 +39,7 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="#
-                ">Componentes</a>
+                <a href="componentes.php">Componentes</a>
                 <a href="videos.php">Videos</a>
             </div>
             <div class="secondary">
@@ -63,6 +62,7 @@
 
     <div class="texto1">
         <h1>Almacenamiento</h1>
+        <p>El disco duro es uno de los componentes más importante en cualquier computadora, ello debido a que permite grabar un gran volumen de información. Además, contiene el sistema operativo que permite que el computador funcione. Entonces, la importancia del disco duro radica en mantener los archivos almacenados para luego utilizarlos en el momento que lo desees.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=disco&&nivel=1'),true);
@@ -99,8 +99,7 @@
                 <a href="index.php"><img class="imglogo" src="img/PCeroLogo.png" alt=""></a></div>
             <div class="primary">
                 <a href="index.php">Inicio</a>
-                <a href="#
-                ">Componentes</a>
+                <a href="componentes.php">Componentes</a>
                 <a href="videossinlogin.php">Videos</a>
             </div>
             <div class="secondary">
@@ -129,6 +128,7 @@
         
     <div class="texto1">
         <h1>Almacenamiento</h1>
+        <p>El disco duro es uno de los componentes más importante en cualquier computadora, ello debido a que permite grabar un gran volumen de información. Además, contiene el sistema operativo que permite que el computador funcione. Entonces, la importancia del disco duro radica en mantener los archivos almacenados para luego utilizarlos en el momento que lo desees.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=disco&&nivel=1'),true);

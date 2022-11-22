@@ -61,7 +61,8 @@
 
 
     <div class="texto1">
-        <h1>Fuentes de poder</h1>
+        <h1>Tarjetas de video</h1>
+        <p>La tarjeta de video es una de las piezas más importantes para que la PC funcione correctamente, ya que, esta pieza es la encargada de transformar la información del CPU en información que se pueda observar a través de un monitor, proyector, TV y otros dispositivos.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=video&&nivel=3'),true);
@@ -74,7 +75,15 @@
             echo $response['response'];
         }
        ?>
-
+<div class="siguiente">
+        <a href="final.php">
+            <button class="cssbuttons-io-button"> Siguiente
+                <div class="icon">
+                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                 </div>
+            </button>
+        </a>
+       </div>
 
     </main>
 
@@ -119,6 +128,7 @@
         
     <div class="texto1">
         <h1>Tarjetas de video</h1>
+        <p>La tarjeta de video es una de las piezas más importantes para que la PC funcione correctamente, ya que, esta pieza es la encargada de transformar la información del CPU en información que se pueda observar a través de un monitor, proyector, TV y otros dispositivos.</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=video&&nivel=3'),true);
@@ -131,7 +141,15 @@
             echo $response['response'];
         }
        ?>
-
+<div class="siguiente">
+        <a href="final.php">
+            <button class="cssbuttons-io-button"> Siguiente
+                <div class="icon">
+                   <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                 </div>
+            </button>
+        </a>
+       </div>
        
     </main>
 

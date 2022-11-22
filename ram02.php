@@ -61,7 +61,8 @@
 
 
     <div class="texto1">
-        <h1>Almacenamiento</h1>
+        <h1>Memoria RAM</h1>
+        <p>La memoria RAM sirve para mejorar la velocidad de respuesta al momento de utilizar algún programa en el ordenador ya que la información que necesita dicho programa para hacerlo funcionar se encuentra almacenada en la memoria RAM, de esta manera, al ejecutar el programa se traslada al procesador todas las instrucciones</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=ram&&nivel=2'),true);
@@ -126,7 +127,8 @@
     <main>
         
     <div class="texto1">
-        <h1>Almacenamiento</h1>
+        <h1>Memoria RAM</h1>
+        <p>La memoria RAM sirve para mejorar la velocidad de respuesta al momento de utilizar algún programa en el ordenador ya que la información que necesita dicho programa para hacerlo funcionar se encuentra almacenada en la memoria RAM, de esta manera, al ejecutar el programa se traslada al procesador todas las instrucciones</p>
     </div>
        <?php
        $response = json_decode(file_get_contents('http://localhost/ProyectoPCeroAvanze/api/productos/api-productos.php?categoria=ram&&nivel=2'),true);
