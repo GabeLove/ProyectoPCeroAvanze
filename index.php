@@ -101,9 +101,10 @@
          
          </section>
 
-         <div class="about">
+         <div  id="seccion2" class="about">
             <img src="img/banner/office1.jpg" alt="">
             <h1 class="quienessomos">¿Quiénes somos?</h1>
+            <p class="nosotrossomos">Somos una página que surgió de un problema porque el cual pasamos muchos de nosotros, el cuál es si queremos ensamblar una computadora por nuestra cuenta y no sabemos si los componentes son los correctos para el uso que le daremos, esta página te ayudara a mostrarte los componentes correctos dependiendo para que quieras usar la computadora. </p>
 
          </div>
    <?php
